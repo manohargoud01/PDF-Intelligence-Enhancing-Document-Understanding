@@ -1,25 +1,49 @@
-# GitHub Codespaces ♥️ Django
 
-Welcome to your shiny new Codespace running Django! We've got everything fired up and running for you to explore Django.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+# TCIT Chatbot
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+This Python script implements a chatbot application, specifically designed to answer questions based on PDF documents. It utilizes Gradio for building the user interface and leverages the LangChain library for natural language processing tasks.
 
-## installing dependancies
+## Requirements
 
-```python
+- Python 3.x
+- Gradio
+- LangChain
+- Other necessary libraries (install using `pip install -r requirements.txt`)
+
+## Installation
+
+1. Clone the repository or download the script files.
+2. Install the required dependencies using pip:
+
+```bash
 pip install -r requirements.txt
 ```
 
-## To collect static files:
+3. Set up the required environment variables:
 
-```python
-python manage.py collectstatic
+```bash
+export HUGGINGFACEHUB_API_TOKEN='--'
 ```
 
-## To run this application:
+4. Run the `tcit_chatbot.py` script:
 
-```python
-python manage.py runserver
+```bash
+python tcit_chatbot.py
 ```
+
+## Usage
+
+- Step 1: Process Document
+    - Adjust advanced options such as chunk size and chunk overlap for document processing.
+    - Generate the vector database for the PDF document.
+
+- Step 2: Chatbot
+    - Interact with the chatbot by typing messages and submitting them.
+    - Clear the conversation or reset the chatbot state.
+
+## Functionality
+
+- The chatbot utilizes a pre-trained language model (LLM) to answer questions based on the processed PDF document.
+- It maintains a conversation history and provides references to specific pages within the document.
+
