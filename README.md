@@ -1,6 +1,6 @@
 
 
-# TCIT Chatbot
+# PDF Intelligence: Enhancing Document Understanding
 
 This Python script implements a chatbot application, specifically designed to answer questions based on PDF documents. It utilizes Gradio for building the user interface and leverages the LangChain library for natural language processing tasks.
 
